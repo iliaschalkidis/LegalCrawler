@@ -46,6 +46,11 @@ The following linux packages are used to process PDF documents:
 
 ```
 pip install -r requirements.txt
+
+sudo apt-get install libcairo2-dev
+sudo apt-get install libpango1.0-dev
+sudo apt-get install -y xpdf
+sudo apt-get install mupdf mupdf-tools
 ```
 
 ### Download Canadian legislation
