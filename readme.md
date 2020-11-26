@@ -13,7 +13,7 @@ A collection of scripts to crawl English legal corpora :closed_book: from open p
 | :finland: Finish legislation    | https://www.finlex.fi/en    | `fi` |
 | :us: US case law* | https://case.law/bulk/download/ | `us` |
 
-\* In order to use the script for US case law, you need to first apply for a researcher account.
+\* In order to use the script for US case law, you need to first apply for a researcher account at https://case.law.
 
 * For US public filings, e.g., contracts, please use the library OpenEDGAR (https://github.com/LexPredict/openedgar) by LexPredict.
 * Documents are saved in raw text format, amend the code if you wish to better handle metadata, document structure, etc.
