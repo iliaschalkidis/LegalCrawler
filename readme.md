@@ -1,19 +1,30 @@
 ## Legal Crawler :octopus:
 
-A collection of scripts to crawl legal corpora from public domains.
+A collection of scripts to crawl English legal corpora :closed_book: from open public domains.
 
-The current version supports the following:
+* The current version supports the following domains:
 
 | Corpus          | Domain                          | Corpus alias        |
 | ------------------- | ------------------------------------  | ------------------- |
 | :eu: EU legislation      | https://eur-lex.europa.eu/            | `eu`                |
 | :uk: UK legislation      | https://legislation.gov.uk/           | `uk` |
-| :ca: Canadian legislation  | http://laws.justice.gc.ca/eng/      | `ca` |
+| :canada: Canadian legislation  | http://laws.justice.gc.ca/eng/      | `ca` |
 | :jp: Japanese legislation  | http://www.japaneselawtranslation.go.jp/law/     | `jp` |
-| Finish legislation    | https://www.finlex.fi/en    | `fi` |
-| US case law | https://case.law/bulk/download/ | `us` |
+| :finland: Finish legislation    | https://www.finlex.fi/en    | `fi` |
+| :us: US case law* | https://case.law/bulk/download/ | `us` |
 
-## Requirements:
+\* In order to use the script for US case law, you need to first apply for a researcher account.
+
+* For US public filings, e.g., contracts, please use the library OpenEDGAR (https://github.com/LexPredict/openedgar) by LexPredict.
+* Documents are saved in raw text format, amend the code if you wish to better handle metadata, document structure, etc.
+
+## :bangbang: Disclaimer :bangbang:
+
+* If you aim to use the code, please carefully read the individual license agreements with respect to re-use, re-publication, terms of use, etc. :memo:
+* The text cleansing from the original PDF/HTML files is minimal. Consider amending the scripts and/or writing your own post-processing data cleansing process that better fit for each corpus. :construction:
+* These scripts aim to give researchers a kick start for scraping legal corpora from public domains. They should not considered a stand-alone qualified solution. :construction:
+
+## Project Requirements:
 
 ### Python packages
 * json-lines
@@ -21,6 +32,8 @@ The current version supports the following:
 * beautifulsoup4
 
 ### Linux packages (command line tools)
+
+The following linux packages are used to process PDF d
 
 * pdftocairo
 * pdftotext
@@ -44,13 +57,15 @@ python download_legal_corpora.py --corpus ca
 ### Download EU legislation
 
 ```
-wget -O data/datasets/datasets.zip http://nlp.cs.aueb.gr/software_and_datasets/EURLEX57K/datasets.zip
-unzip data/datasets/datasets.zip -d data/datasets/EURLEX57K
-rm data/datasets/datasets.zip
-rm -rf data/datasets/EURLEX57K/__MACOSX
-mv data/datasets/EURLEX57K/dataset/* data/datasets/EURLEX57K/
-rm -rf data/datasets/EURLEX57K/dataset
-wget -O data/datasets/EURLEX57K/EURLEX57K.json http://nlp.cs.aueb.gr/software_and_datasets/EURLEX57K/eurovoc_en.json
+python download_legal_corpora.py --corpus eu
+
+```
+
+### Download all (EU, UK, CA, FI, JP, US)
+
+```
+python download_legal_corpora.py --corpus all
+
 ```
 
 
