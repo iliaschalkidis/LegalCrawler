@@ -33,7 +33,7 @@ A collection of scripts to crawl English legal corpora :closed_book: from open p
 
 ### Linux packages (command line tools)
 
-The following linux packages are used to process PDF d
+The following linux packages are used to process PDF documents:
 
 * pdftocairo
 * pdftotext
