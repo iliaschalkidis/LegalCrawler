@@ -1,0 +1,3 @@
+/Users/kiddothe2b/PycharmProjects/legal.crawler/data/fin/2014/1419.pdf|/en/laki/kaannokset/2014/en20141419|0
+/Users/kiddothe2b/PycharmProjects/legal.crawler/data/fin/2014/162.pdf|/en/laki/kaannokset/2014/en20140162|0
+/Users/kiddothe2b/PycharmProjects/legal.crawler/data/fin/1998/442.pdf|/en/laki/kaannokset/1998/en19980442|0

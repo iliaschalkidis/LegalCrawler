@@ -1,0 +1,7 @@
+json-lines
+tqdm
+beautifulsoup4
+# pdftocairo
+# pdftotext
+# mutool
+# gs
