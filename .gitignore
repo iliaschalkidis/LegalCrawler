@@ -7,3 +7,4 @@
 *.f5
 .idea/
 .ipynb_checkpoints
+data/*
