@@ -73,4 +73,17 @@ python download_legal_corpora.py --corpus all
 
 ```
 
+## Citation
+
+In case you use this repo or any derivative in your work, please cite using the following:
+
+```
+@Misc{chalkidis-legalcrawler,
+author =   {Ilias Chalkidis},
+title =    {{Legal Crawler}: A collection of scripts to crawl English legal corpora from open public domains.},
+howpublished = {\url{https://github.com/iliaschalkidis/LegalCrawler/}},
+year = {2020--2022}
+}
+```
+
 
